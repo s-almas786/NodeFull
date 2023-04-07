@@ -27,9 +27,8 @@ const movieSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Runtime is required"],
   },
-  genre: [String],
   director: String,
-  ratinfg: {
+  rating: {
     type: Number,
     default: 1.0,
   },
@@ -41,7 +40,6 @@ const testMovie = new Movie({
   title: "Beetlejuice",
   year: "1988",
   runtime: "92",
-  genres: ["Comedy", "Fantasy"],
   director: "Tim Burton",
   rating: 5.0,
 });
